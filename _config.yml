@@ -9,7 +9,7 @@ url: "https://S-Ihara.github.io" # the base hostname & protocol for your site
 author:
   fullname: SIhara
   github: s-ihara
-  linkedin: S_Ihara77
+  linkedin: S_Ihara77 # 必要最低限の変更で済ますため名前がlinkedinになっているが実際はtwitterである
   email: ihara@cv.info.gifu-u.ac.jp
 
 
