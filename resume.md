@@ -11,14 +11,14 @@ subtitle: personal profile
 岐阜大学大学院の修士1年  
 現在、[加藤研究室](http://www.cv.info.gifu-u.ac.jp)でコンピュータビジョンや機械学習の研究をしている
 #### interest
-**Machine Learning** - XAIやReinforcement learningなど
+**Machine Learning** - XAIやReinforcement learningなど  
 **Computer Vision** - 画像からの異常検知など
 
 
 ### Affiliation
 
-2022.4 ~ 現在 :岐阜大学大学院 自然科学技術研究科 知能理工学専攻 修士課程  
-2018.4 ~ 2022.3 :岐阜大学 工学部 電気電子・情報工学科 学士過程  
+2022.4 ~ 現在 : 岐阜大学大学院 自然科学技術研究科 知能理工学専攻 修士課程  
+2018.4 ~ 2022.3 : 岐阜大学 工学部 電気電子・情報工学科 学士過程  
 
 ### Accounts
 [**twitter**](https://twitter.com/s_ihara77) - あんまりつかってないけど  
@@ -26,7 +26,7 @@ subtitle: personal profile
 
 
 ### Archive
-[**Blog**](https://s-ihara.github.io/resume) - 読んだ論文のざっくりしたまとめとか
+[**Blog**](https://s-ihara.github.io/blog) - 読んだ論文のざっくりしたまとめとか
 
 <!-- 
 ### Activitys
