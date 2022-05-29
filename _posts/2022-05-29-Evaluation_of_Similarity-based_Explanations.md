@@ -25,7 +25,6 @@ categories: ["papers"]
     説明したいインスタンスと説明として示すインスタンスのクラスが違うと説明として意味不明になってしまう
     
 
-<img src="{{'/assets/img/blog/Evaluation of Similarity-based Explanations-fig1.png'}}">
 ![Untitled](/assets/img/blog/Evaluation of Similarity-based Explanations-fig1.png)
 
 1. 同一サブクラステスト
@@ -33,7 +32,7 @@ categories: ["papers"]
     クラスが潜在的なサブクラスから構成されている場合、上げられた類似インスタンスはテストインスタンスと同じサブクラスに属するべきである
     
 
-<img src="{{'/assets/img/blog/Evaluation of Similarity-based Explanations-fig2.png'}}">
+![Untitled](/assets/img/blog/Evaluation of Similarity-based Explanations-fig2.png)
 
 ## 検証方法
 
