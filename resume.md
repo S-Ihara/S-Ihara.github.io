@@ -8,7 +8,7 @@ subtitle: personal profile
 <br> -->
 
 ### 井原　駿斗 (Shunto Ihara)
-<img src="{{'/assets/img/migawari.jpg'}}" style="float: right;width: 40%;margin-top: -20px;">
+<img src="{{'/assets/img/migawari.jpg'}}" style="float: right;width: 35%;margin-top: -20px;">
 岐阜大学大学院の修士1年  
 現在、[加藤研究室](http://www.cv.info.gifu-u.ac.jp)でコンピュータビジョンや機械学習の研究をしている
 #### interest
