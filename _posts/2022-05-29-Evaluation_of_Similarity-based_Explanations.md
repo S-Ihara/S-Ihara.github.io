@@ -33,7 +33,7 @@ categories: ["papers"]
     クラスが潜在的なサブクラスから構成されている場合、上げられた類似インスタンスはテストインスタンスと同じサブクラスに属するべきである
     
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5df3252b-7b00-4663-bf28-11965f0e9480/Untitled.png)
+<img src="{{'/assets/img/blog/Evaluation of Similarity-based Explanations-fig2.png'}}">
 
 ## 検証方法
 
@@ -45,7 +45,7 @@ categories: ["papers"]
 
 実験手順はモデルの訓練、ランダムな500個のテストインスタンスの抽出、3つのテストの流れを10回繰り返した。それぞれのテストは定量的に評価を行う。
 
-![結果のまとめの表　GCが一番良い結果となっている](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/baa900c8-2126-4531-9acc-c81e9396cf74/Untitled.png)
+![結果のまとめの表　GCが一番良い結果となっている](/assets/img/blog/Evaluation of Similarity-based Explanations-fig3.png)
 
 結果のまとめの表　GCが一番良い結果となっている
 
