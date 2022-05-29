@@ -10,8 +10,6 @@ categories: ["papers"]
 
 説明性aiの手法の一つにモデルの予測の際に訓練データの中から類似のインスタンスを提供する方法がある。この類似を測るためにいくつかのrelevance metricsがある。本研究ではユーザーに合理的な説明を行うことができるrelevance metricsの検討をおこなった。
 
-## 先行研究と比べて
-
 ## 技術や手法のポイント
 
 類似性ベースの説明のために望ましい性質を持つrelevance metricsを3つのテストにより評価した。
@@ -27,7 +25,7 @@ categories: ["papers"]
 
 ![Untitled](/assets/img/blog/Evaluation of Similarity-based Explanations-fig1.png)
 
-1. 同一サブクラステスト
+3. 同一サブクラステスト
     
     クラスが潜在的なサブクラスから構成されている場合、上げられた類似インスタンスはテストインスタンスと同じサブクラスに属するべきである
     
