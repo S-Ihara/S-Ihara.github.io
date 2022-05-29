@@ -25,7 +25,8 @@ categories: ["papers"]
     説明したいインスタンスと説明として示すインスタンスのクラスが違うと説明として意味不明になってしまう
     
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/da94843a-2a29-4bba-9e6e-6f7155a2ab04/Untitled.png)
+<img src="{{'/assets/img/blog/Evaluation of Similarity-based Explanations-fig1.png'}}">
+![Untitled](/assets/img/blog/Evaluation of Similarity-based Explanations-fig1.png)
 
 1. 同一サブクラステスト
     
