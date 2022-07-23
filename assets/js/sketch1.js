@@ -1,5 +1,18 @@
 let flock;
 
+// ハイパラ
+let max_speed = 5; // default 5
+let max_force = 0.05; // default 0.05
+// separation params
+let separation_force = 1+2*Math.random(); // default 3.5
+let separation_distance = 25.0 + Math.random()*10-5; // default 25.0
+// aligment params
+let aligment_force = 1+Math.random(); // default 1.5
+let aligment_distance = 50.0 + Math.random()*10-5; // default 50.0
+// cohesion params
+let cohesion_force = 2*Math.random(); // default 1.5
+let cohesion_distance = 50.0 + Math.random()*10-5; //default 50.0
+
 // reference
 // https://codepen.io/cossovich/pen/QWjMxye?editors=0010
 
@@ -47,8 +60,8 @@ function Boid(x,y){
     this.velocity = createVector(random(-1,1),random(-1,1));
     this.position = createVector(x,y);
     this.r = 3.0;
-    this.maxspeed = 5;
-    this.maxforce = 0.05;
+    this.maxspeed = max_speed;
+    this.maxforce = max_force;
 }
 
 Boid.prototype.run = function(boids){
@@ -67,9 +80,9 @@ Boid.prototype.flock = function(boids){
     let ali = this.align(boids);
     let coh = this.cohesion(boids);
 
-    sep.mult(3.5);
-    ali.mult(1.5);
-    coh.mult(1.5);
+    sep.mult(separation_force);
+    ali.mult(aligment_force);
+    coh.mult(cohesion_force);
 
     this.applyForce(sep);
     this.applyForce(ali);
@@ -120,7 +133,7 @@ Boid.prototype.borders = function(){
 
 //separation
 Boid.prototype.separate = function(boids){
-    let desiredseparation = 25.0;
+    let desiredseparation = separation_distance;
     let steer = createVector(0,0);
     let count = 0;
     for(let i=0;i<boids.length;i++){
@@ -148,7 +161,7 @@ Boid.prototype.separate = function(boids){
 
 // Alignment
 Boid.prototype.align = function(boids){
-    let neighbordist = 50;
+    let neighbordist = aligment_distance;
     let sum = createVector(0,0);
     let count = 0;
     for(let i=0;i<boids.length;i++){
@@ -172,7 +185,7 @@ Boid.prototype.align = function(boids){
 
 // Cohesion
 Boid.prototype.cohesion = function(boids){
-    let neighbordist = 50;
+    let neighbordist = cohesion_distance;
     let sum = createVector(0,0);
     let count = 0;
     for(let i=0;i<boids.length;i++){
