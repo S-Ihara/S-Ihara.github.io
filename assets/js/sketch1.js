@@ -13,6 +13,8 @@ let aligment_distance = 50.0 + Math.random()*10-5; // default 50.0
 let cohesion_force = 2*Math.random(); // default 1.5
 let cohesion_distance = 50.0 + Math.random()*10-5; //default 50.0
 
+// preyer 
+
 // reference
 // https://codepen.io/cossovich/pen/QWjMxye?editors=0010
 
@@ -200,5 +202,20 @@ Boid.prototype.cohesion = function(boids){
         return this.seek(sum);
     }else{
         return createVector(0,0);
+    }
+};
+
+// preyerを作ってboidsをコントロールしたいが、実装どうしようか
+function Prey(){
+    this.preyers = [];
+}
+
+Prey.prototype.addPreyer = function(b){
+    this.preyers.push(b);
+};
+
+Prey.prototype.run = function(){
+    for(let i=0;i<this.preyers.length;i++){
+        this.preyers[i].run(this.boids);
     }
 };
