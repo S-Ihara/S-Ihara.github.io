@@ -13,13 +13,19 @@ subtitle: personal profile
 現在、[加藤研究室](http://www.cv.info.gifu-u.ac.jp)でコンピュータビジョンや機械学習の研究をしている
 #### interest
 **Machine Learning** - XAIやReinforcement learningなど  
-**Computer Vision** - 画像からの異常検知など
+**Computer Vision** - 動画像認識など
 
 
 ### Affiliation
 
 2022.4 ~ 現在 : 岐阜大学大学院 自然科学技術研究科 知能理工学専攻 修士課程  
 2018.4 ~ 2022.3 : 岐阜大学 工学部 電気電子・情報工学科 学士過程  
+
+### Activitys
+
+#### Internship
+2022.8 ~ 2022.9 : Sony Group Corporation R&D Center (4 weeks)
+* xai手法のnnabla実装及びcolabのexampleの作成
 
 ### Accounts
 [**twitter**](https://twitter.com/s_ihara77) - あんまりつかってないけど  
@@ -29,7 +35,7 @@ subtitle: personal profile
 ### Archive
 [**Blog**](https://s-ihara.github.io/blog) - 読んだ論文のざっくりしたまとめとか
 
-<!-- 
+<!--
 ### Activitys
 学会での発表とか成果物を乗っけたいけどない...!!
 --->
