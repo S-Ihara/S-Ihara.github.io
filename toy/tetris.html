@@ -1,0 +1,207 @@
+<html>
+<!-- このコードはこのコメントアウトの行を覗いて全てchatGPTくんに書いてもらいました -->
+  <head>
+    <title>テトリス</title>
+  </head>
+  <body>
+    <canvas id="tetris" width="200" height="400"></canvas>
+    <script>
+      // canvasを取得
+      var canvas = document.getElementById('tetris');
+      var context = canvas.getContext('2d');
+
+      // テトリス盤面を描画
+      function drawTetrisBoard() {
+        // 盤面を白色で塗りつぶす
+        context.fillStyle = 'white';
+        context.fillRect(0, 0, canvas.width, canvas.height);
+
+        // 盤面を黒色の線で囲む
+        context.strokeStyle = 'black';
+        context.strokeRect(0, 0, canvas.width, canvas.height);
+
+        // 盤面を10x20のグリッドにする
+        for (var x = 0; x < 10; x++) {
+          for (var y = 0; y < 20; y++) {
+            context.strokeRect(x * 20, y * 20, 20, 20);
+          }
+        }
+      }
+
+      // テトリスブロックを定義
+      var blocks = [
+        [[1, 1, 1], [0, 1, 0]], // 右向きのL字型ブロック
+        [[1, 1, 1], [1, 0, 0]], // 左向きのL字型ブロック
+        [[1, 1], [1, 1]],       // 正方形ブロック
+        [[1, 1, 1], [0, 0, 1]], // Z字型ブロック
+        [[1, 1, 1], [1, 0, 0]], // S字型ブロック
+        [[0, 1, 1], [1, 1, 0]], // ティ字型ブロック
+        [[1, 0, 0], [1, 1, 1]] // 下向きのJ字型ブロック
+      ];
+      
+    // ブロックをランダムに生成
+    function createBlock() {
+        return blocks[Math.floor(Math.random() * blocks.length)];
+    }
+
+    // 現在のブロックを保持する変数
+    var currentBlock;
+
+    // ブロックを初期位置にセット
+    function resetBlock() {
+        currentBlock = createBlock();
+        currentX = 3;
+        currentY = 0;
+    }
+
+    // キー入力を受け付けるためのイベントリスナー
+    document.addEventListener('keydown', function(e) {
+        // 左矢印キーが押されたとき
+        if (e.keyCode === 37) {
+        // ブロックを左に移動
+        currentX--;
+        // 移動後の位置が盤面の範囲外になっていないかチェック
+        if (checkCollision()) {
+            // 範囲外になっていた場合は、元の位置に戻す
+            currentX++;
+        }
+        }
+        // 右矢印キーが押されたとき
+        else if (e.keyCode === 39) {
+        // ブロックを右に移動
+        currentX++;
+        // 移動後の位置が盤面の範囲外になっていないかチェック
+        if (checkCollision()) {
+            // 範囲外になっていた場合は、元の位置に戻す
+            currentX--;
+        }
+        }
+        // 下矢印キーが押されたとき
+        else if (e.keyCode === 40) {
+        // ブロックを下に移動
+        currentY++;
+        // 移動後の位置が盤面の範囲外になっていないかチェック
+        if (checkCollision()) {
+            // 範囲外になっていた場合は、元の位置に戻し、ブロックを固定する
+            currentY--;
+            fixBlock();
+        }
+        }
+    });
+
+    // ブロックの移動や回転後の衝突判定
+    function checkCollision() {
+        // ブロックが盤面の範囲外になっているかチェック
+        for (var x = 0; x < currentBlock.length; x++) {
+            for (var y = 0; y < currentBlock[x].length; y++) {
+                if (currentBlock[x][y]) {
+                    // 現在のブロックの座標を計算
+                    var blockX = currentX + x;
+                    var blockY = currentY + y;
+
+
+            // 盤面の端に達しているかチェック
+            if (blockX < 0 || blockX >= 10 || blockY < 0 || blockY >= 20) {
+                return true;
+            }
+
+          // 他のブロックと衝突しているかチェック
+          if (board[blockY][blockX]) {
+            return true;
+          }
+        }
+      }
+    }
+    return false;
+    }
+
+  // 盤面の中にブロックを固定する
+  function fixBlock() {
+    for (var x = 0; x < currentBlock.length; x++) {
+      for (var y = 0; y < currentBlock[x].length; y++) {
+        if (currentBlock[x][y]) {
+          // 現在のブロックの座標を計算
+          var blockX = currentX + x;
+          var blockY = currentY + y;
+
+          // 盤面にブロックをセット
+          board[blockY][blockX] = currentBlock[x][y];
+        }
+      }
+    }
+
+    // ブロックが固定されたので、新しいブロックを生成
+    resetBlock();
+  }
+
+  // ブロックを描画
+  function drawBlock() {
+    for (var x = 0; x < currentBlock.length; x++) {
+      for (var y = 0; y < currentBlock[x].length; y++) {
+        if (currentBlock[x][y]) {
+          // 現在のブロックの座標を計算
+          var blockX = currentX + x;
+          var blockY = currentY + y;
+
+          // ブロックを描画
+          context.fillStyle = 'black';
+          context.fillRect(blockX * 20, blockY * 20, 20, 20);
+        }
+      }
+    }
+  }
+
+  // 盤面を描画
+  function drawBoard() {
+    for (var x = 0; x < 10; x++) {
+      for (var y = 0; y < 20; y++) {
+        if (board[y][x]) {
+          // ブロックを描画
+          context.fillStyle = 'black';
+          context.fillRect(x * 20, y * 20, 20, 20);
+        }
+      }
+    }
+  }
+
+  // ブロックを自動で落とす
+  function dropBlock() {
+        // ブロックを下に移動
+        currentY++;
+        // 移動後の位置が盤面の範囲外になっていないかチェック
+        if (checkCollision()) {
+            // 範囲外になっていた場合は、元の位置に戻し、ブロックを固定する
+            currentY--;
+            fixBlock();
+        }
+  }
+
+  // 盤面を初期化
+  var board = [];
+  for (var y = 0; y < 20; y++) {
+    board[y] = [];
+    for (var x = 0; x < 10; x++) {
+      board[y][x] = 0;
+    }
+  }
+
+  // ブロックを初期位置にセット
+  resetBlock();
+
+  // メイン処理
+  function run() {
+    // 盤面を描画
+    drawTetrisBoard();
+    drawBoard();
+    drawBlock();
+
+    // ブロックを自動で落とす
+    dropBlock();
+
+    // 次のフレームを描画するために、setTimeoutで再帰呼び出し
+    setTimeout(run, 500);
+  }
+  run();
+</script>
+</body>
+</html>
