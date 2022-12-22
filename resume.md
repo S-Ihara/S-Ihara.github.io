@@ -2,6 +2,8 @@
 layout: page
 title: About
 subtitle: personal profile
+sitemap:
+  priority: 0.9
 ---
 
 <!-- <span style="float: right; "><a href="{{ '/assets/resume.pdf' | prepend: site.baseurl }}"><strong>> Download as PDF</strong></a> </span>
@@ -13,7 +15,7 @@ subtitle: personal profile
 現在、[加藤研究室](http://www.cv.info.gifu-u.ac.jp)でコンピュータビジョンや機械学習の研究をしている
 #### interest
 **Machine Learning** - XAIやReinforcement learningなど  
-**Computer Vision** - 動画像認識など
+**Computer Vision** - Vision Transformerなど
 
 
 ### Affiliation
@@ -25,7 +27,7 @@ subtitle: personal profile
 
 #### Internship
 2022.8 ~ 2022.9 : Sony Group Corporation R&D Center (4 weeks)
-* xai手法のnnabla実装及びcolabのexampleの作成
+* xai手法のnnabla実装及びcolabで動かせるようなexampleの作成
 
 ### Accounts
 [**twitter**](https://twitter.com/s_ihara77) - あんまりつかってないけど  

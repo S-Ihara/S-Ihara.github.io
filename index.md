@@ -9,5 +9,5 @@ sitemap:
 <img src="{{ '/assets/img/pudhina.png' | prepend: site.baseurl }}" id="about-img">
 
 <div id="describe-text">
-	<p>ここはSIharaのホームページのホームです</p>
+	<p>ここはShunto Iharaのホームページです</p>
 </div>
