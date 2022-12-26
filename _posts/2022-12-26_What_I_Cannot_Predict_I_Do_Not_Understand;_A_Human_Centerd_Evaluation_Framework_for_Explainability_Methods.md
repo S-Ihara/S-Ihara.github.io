@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV) Perturbation Analysis"
+title:  "What I Cannot Predict, I Do Not Understand: A Human-Centered Evaluation Framework for Explainability Methods"
 subtitle: "reading papers"
 date:   2022-12-05
 categories: ["papers"]
