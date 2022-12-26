@@ -4,6 +4,8 @@ title:  "XRAI: Better Attributions Through Regions"
 subtitle: "reading papers"
 date:   2022-06-26
 categories: ["papers"]
+sitemap:
+  priority: 0.7
 ---
 
 ## どんなものか

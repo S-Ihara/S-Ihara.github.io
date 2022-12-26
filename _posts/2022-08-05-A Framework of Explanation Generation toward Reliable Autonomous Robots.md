@@ -4,6 +4,8 @@ title:  "A Framework of Explanation Generation toward Reliable Autonomous Robots
 subtitle: "reading papers"
 date:   2022-07-23
 categories: ["papers"]
+sitemap:
+  priority: 0.5
 ---
 
 ## どんなものか

@@ -4,6 +4,8 @@ title:  "This Looks Like That: Deep Learning for Interpretable Image Recognition
 subtitle: "reading papers"
 date:   2022-07-28
 categories: ["papers"]
+sitemap:
+  priority: 0.7
 ---
 
 ## どんなものか

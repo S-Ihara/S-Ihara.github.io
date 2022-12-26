@@ -4,6 +4,8 @@ title:  "GPT can make tetris"
 subtitle: "playing with AI"
 date: 2022-12-01
 categories: ["junk"]
+sitemap:
+  priority: 0.7
 ---
 
 [ChatGPT](https://chat.openai.com/chat)というものがOpenAIから発表されたらしい. テスト期間ということで無料で使うことができる(2022.12.1日現在).

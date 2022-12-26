@@ -4,6 +4,8 @@ title:  "A Benchmark for Interpretability Methods in Deep Neural Networks"
 subtitle: "reading papers"
 date:   2022-05-29
 categories: ["papers"]
+sitemap:
+  priority: 0.3
 ---
 
 ## どんなものか

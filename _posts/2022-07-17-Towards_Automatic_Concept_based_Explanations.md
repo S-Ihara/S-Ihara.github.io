@@ -4,6 +4,8 @@ title:  "Towards Automatic Concept-based Explanations"
 subtitle: "reading papers"
 date:   2022-06-19
 categories: ["papers"]
+sitemap:
+  priority: 0.5
 ---
 
 ## どんなものか

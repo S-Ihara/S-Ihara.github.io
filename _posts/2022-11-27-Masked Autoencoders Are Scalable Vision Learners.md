@@ -4,6 +4,8 @@ title:  "Masked Autoencoders Are Scalable Vision Learners"
 subtitle: "reading papers"
 date:   2022-11-16
 categories: ["papers"]
+sitemap:
+  priority: 0.7
 ---
 
 ## どんなものか  

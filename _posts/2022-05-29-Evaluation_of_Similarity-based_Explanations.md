@@ -4,6 +4,8 @@ title:  "Evaluation of Similarity-based Explanations"
 subtitle: "reading papers"
 date:   2022-05-29
 categories: ["papers"]
+sitemap:
+  priority: 0.6
 ---
 
 ## どんなものか

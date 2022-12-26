@@ -4,6 +4,8 @@ title: "What I Cannot Predict, I Do Not Understand: A Human-Centered Evaluation 
 subtitle: "reading papers"
 date: 2022-12-22
 categories: ["papers"]
+sitemap:
+  priority: 0.5
 ---
     
 - ## どんなものか  

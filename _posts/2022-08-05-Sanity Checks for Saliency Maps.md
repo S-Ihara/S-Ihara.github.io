@@ -4,6 +4,8 @@ title:  "Sanity Checks for Saliency Maps"
 subtitle: "reading papers"
 date:   2022-07-28
 categories: ["papers"]
+sitemap:
+  priority: 0.7
 ---
 
 ## どんなものか

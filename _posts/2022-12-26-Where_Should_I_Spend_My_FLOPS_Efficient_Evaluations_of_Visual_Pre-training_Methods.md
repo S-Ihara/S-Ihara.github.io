@@ -4,6 +4,8 @@ title:  "Where Should I Spend My FLOPS? Efficiency Evaluations of Visual Pre-tra
 subtitle: "reading papers"
 date:   2022-12-22
 categories: ["papers"]
+sitemap:
+  priority: 0.5
 ---
 
     

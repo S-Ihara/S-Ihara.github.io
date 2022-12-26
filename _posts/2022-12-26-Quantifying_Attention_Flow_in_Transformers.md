@@ -4,6 +4,8 @@ title:  "Quantifying Attention Flow in Transformers"
 subtitle: "reading papers"
 date:   2022-10-13
 categories: ["papers"]
+sitemap:
+  priority: 0.7
 ---
 
 - ## どんなものか  

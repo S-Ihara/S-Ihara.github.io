@@ -4,6 +4,8 @@ title: "Interpretability Beyond Feature Attribution: Quantitative Testing with C
 subtitle: "reading papers"
 date: 2022-09-21
 categories: ["papers"]
+sitemap:
+  priority: 0.7
 ---
     
 - ## どんなものか  
