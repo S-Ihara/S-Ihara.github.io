@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "Don't Lie to Me! Robust and Efficient Explainability with Verified Perturbation Analysis"
+title: "Don't Lie to Me! Robust and Efficient Explainability with Verified Perturbation Analysis"
 subtitle: "reading papers"
 date:   2022-12-05
 categories: ["papers"]
@@ -24,6 +24,4 @@ categories: ["papers"]
 - ## 検証方法  
 - Deletion, Insertion, MuFidelity, Robustness-S_r のメトリクスを用いた実験結果が以下  
 - ![image.png](/assets/img/image_1670225198534_0.png)  
-- ## 議論  
--  
--  
+- ## 議論
