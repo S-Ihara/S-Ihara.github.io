@@ -4,16 +4,16 @@ title:  "This Looks Like That: Deep Learning for Interpretable Image Recognition
 subtitle: "reading papers"
 date:   2022-07-28
 categories: ["papers"]
+feature_image: /assets/img/blog/This Looks Like That Deep Learning for Interpretable Image Recognition-fig1.png
 sitemap:
   priority: 0.7
 ---
 
 ## どんなものか
 
-![スクリーンショット 2022-07-28 11.05.33.png](/assets/img/blog/This Looks Like That Deep Learning for Interpretable Image Recognition-fig1.png)
-
 画像のクラス分類に対してあるクラスの典型的な例（prototype）を示すことで予測に対する説明を行う手法。
-
+<!--more-->
+![スクリーンショット 2022-07-28 11.05.33.png](/assets/img/blog/This Looks Like That Deep Learning for Interpretable Image Recognition-fig1.png)
 ## 先行研究と比べて
 
 ポストホックにモデルやCNNがの説明可能性分析を行うものと比べて、本手法ではモデルが実際にどのように意思決定を行うかの推論プロセスを内蔵している。

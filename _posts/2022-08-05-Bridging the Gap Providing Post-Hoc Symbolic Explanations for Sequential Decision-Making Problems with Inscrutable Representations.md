@@ -4,6 +4,7 @@ title:  "Bridging the Gap: Providing Post-Hoc Symbolic Explanations for Sequenti
 subtitle: "reading papers"
 date:   2022-07-18
 categories: ["papers"]
+feature_image: /assets/img/blog/Bridging the Gap Providing Post-Hoc Symbolic Explanations for Sequential Decision-Making Problems with Inscrutable Representations-fig1.png
 sitemap:
   priority: 0.5
 ---
@@ -11,6 +12,7 @@ sitemap:
 ## どんなものか
 
 AIシステムが判断の根拠を説明するためにユーザーが指定した概念による対比的説明を提供する
+<!--more-->
 
 ### 背景
 

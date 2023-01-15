@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Blog
-subtitle: tech diary
+subtitle: all archives
+permalink: /blog/archives
 ---
 
 <div>

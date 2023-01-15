@@ -4,6 +4,7 @@ title:  "Where Should I Spend My FLOPS? Efficiency Evaluations of Visual Pre-tra
 subtitle: "reading papers"
 date:   2022-12-22
 categories: ["papers"]
+feature_image: /assets/img/image_1671687259574_0.png
 sitemap:
   priority: 0.5
 ---
@@ -11,6 +12,7 @@ sitemap:
     
 - ## どんなものか  
 - 一定のFLOPs予算（計算資源）がある場合, 画像認識において高い精度を得るための事故教師あり学習は何かを調査した論文  
+<!--more-->
 - ## 先行研究と比べて  
 - SSL手法の事前学習データセットを比較した研究はわずかしかない  
 - SSLの論文ではモデルのスケーリング曲線がよく使われるが, バックボーンのモデルのサイズは計算効率と同等ではなく（ステップ数など他の側面が全体のFLOPsを支配する可能性があるから）FLOPsについて有効性を比較した先行研究はなかった  

@@ -4,12 +4,14 @@ title: "Don't Lie to Me! Robust and Efficient Explainability with Verified Pertu
 subtitle: "reading papers"
 date:   2022-12-05
 categories: ["papers"]
+feature_image: /assets/img/image_1669258785455_0.png
 sitemap:
   priority: 0.7
 ---
 
 - ## どんなものか  
 - Perturbation basedなsaliency mapsを生成する新規手法, EVA(Explaining using Verified perturbation Analysis)を提案した  
+<!--more-->
 - ![image.png](/assets/img/image_1669258785455_0.png){:height 252, :width 439}  
 	- (図1). saliency, つまり勾配はxの周りの限りなく小さい摂動を用い, 摂動(Occlusion)は単にベースライン状態に向かって各変数を1つずつ変化させる. ランダムサンプリングは結果を偏らせる.  
 	  我々の提案手法は検証済み摂動解析を用いて, xの周りの摂動空間を効率的かつ系統的に探索し, 信頼性が高く忠実な説明を生成することを提案する.  

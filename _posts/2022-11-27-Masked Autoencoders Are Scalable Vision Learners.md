@@ -4,6 +4,7 @@ title:  "Masked Autoencoders Are Scalable Vision Learners"
 subtitle: "reading papers"
 date:   2022-11-16
 categories: ["papers"]
+feature_image: /assets/img/image_1668754146446_0.png
 sitemap:
   priority: 0.7
 ---
@@ -11,7 +12,7 @@ sitemap:
 ## どんなものか  
 - ViTバックボーンに対して性能の高い自己教師あり学習器を提案した
 - masked autoencoderを用いて事前学習したモデルのencoder部分を使って学習させると非常に高い性能を出せることを示した
-
+<!--more-->
 ## 先行研究と比べて  
 - 自然言語処理分野における事前学習手法としてマスク処理の手法は大きな成功を収めている
 - オートエンコーダは表現を学習する古典的な手法であり, 本手法では画像のマスキングを用いることで一般化されたDenosising autoencodersとして考えることができる

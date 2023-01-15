@@ -4,17 +4,18 @@ title:  "XRAI: Better Attributions Through Regions"
 subtitle: "reading papers"
 date:   2022-06-26
 categories: ["papers"]
+feature_image: /assets/img/blog/XRAI_Better_Attributions_Through_Regions-fig1.png
 sitemap:
   priority: 0.7
 ---
 
 ## どんなものか
 
+新しい領域ベースの帰属法であるXRAIを提案した。また画像ベースのSaliency mapsの品質を経験的に評価する方法(PIC)や帰属法に対する公理ベースのサニティチェックを提案した。
+<!--more-->
 ![論文figure2. XRAIでは帰属領域を段階的に成長させる。選択可能なセグメントのプールから予測に重要な3%の領域と10%の領域の例。](/assets/img/blog/XRAI_Better_Attributions_Through_Regions-fig1.png)
 
 論文figure2. XRAIでは帰属領域を段階的に成長させる。選択可能なセグメントのプールから予測に重要な3%の領域と10%の領域の例。
-
-新しい領域ベースの帰属法であるXRAIを提案した。また画像ベースのSaliency mapsの品質を経験的に評価する方法(PIC)や帰属法に対する公理ベースのサニティチェックを提案した。
 
 ## 先行研究と比べて
 

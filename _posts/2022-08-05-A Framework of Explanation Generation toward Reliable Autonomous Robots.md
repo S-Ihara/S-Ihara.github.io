@@ -4,15 +4,16 @@ title:  "A Framework of Explanation Generation toward Reliable Autonomous Robots
 subtitle: "reading papers"
 date:   2022-07-23
 categories: ["papers"]
+feature_image: /assets/img/blog/A Framework of Explanation Generation toward Reliable Autonomous Robots-fig1.png
 sitemap:
   priority: 0.5
 ---
 
 ## どんなものか
 
-![スクリーンショット 2022-07-18 13.53.09.png](/assets/img/blog/A Framework of Explanation Generation toward Reliable Autonomous Robots-fig1.png)
-
 マルコフ決定過程（MDP）において、現在の状態から目標の状態への遷移を説明する能力を自立型エージェントに付与するアルゴリズムを提案する。
+<!--more-->
+![スクリーンショット 2022-07-18 13.53.09.png](/assets/img/blog/A Framework of Explanation Generation toward Reliable Autonomous Robots-fig1.png)
 
 ### 背景
 

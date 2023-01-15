@@ -4,6 +4,7 @@ title:  "Towards Automatic Concept-based Explanations"
 subtitle: "reading papers"
 date:   2022-06-19
 categories: ["papers"]
+feature_image: /assets/img/blog/Towards_Automatic_Concept_based_Explanations.-fig1.png
 sitemap:
   priority: 0.5
 ---
@@ -11,6 +12,7 @@ sitemap:
 ## どんなものか
 
 データセット全体に適用される視覚的概念を自動的に抽出するACE(Automated Concept-based Explanations)という手法を開発した。
+<!--more-->
 
 ## 先行研究と比べて
 

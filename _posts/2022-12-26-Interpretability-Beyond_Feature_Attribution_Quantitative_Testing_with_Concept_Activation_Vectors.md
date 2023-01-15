@@ -4,6 +4,7 @@ title: "Interpretability Beyond Feature Attribution: Quantitative Testing with C
 subtitle: "reading papers"
 date: 2022-09-21
 categories: ["papers"]
+feature_image: /assets/img/image_1671963078793_0.png
 sitemap:
   priority: 0.7
 ---
@@ -11,6 +12,7 @@ sitemap:
 - ## どんなものか  
 - 人間に親しみやすい概念の形でニューラルネットワークの内部状態の解釈を提供する手法  
 - 概念活性化ベクトル(CAV)を導入しユーザーが定義した概念が分類結果に対してどの程度重要であるかを定量化する（例えばシマウマの予測がストライプの存在にどの程度敏感であるか）  
+<!--more-->
 - ![image.png](/assets/img/image_1671963078793_0.png)  
 - ## 先行研究と比べて  
 - 画素値(入力特徴量)の予測に対する寄与度を測る手法である Saliency maps のいくつかの手法は自然なアプローチとなる. しかし画素値レベルの説明は人間が理解しやすい上位概念に対応しないことが大きな問題である. またモデルの内部はやはり理解不能なままである.  

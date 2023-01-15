@@ -24,3 +24,10 @@ markdown: kramdown
 
 # google analytics
 google_analytics: UA-206063471-1
+
+# ページ分け
+plugins: [jekyll-paginate]
+paginate_path: "/blog/page:num/"
+paginate: 5
+
+excerpt_separator: <!--more-->

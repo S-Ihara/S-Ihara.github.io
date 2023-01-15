@@ -4,6 +4,7 @@ title:  "A Benchmark for Interpretability Methods in Deep Neural Networks"
 subtitle: "reading papers"
 date:   2022-05-29
 categories: ["papers"]
+feature_image: /assets/img/blog/A Benchmark for Interpretability Methods in Deep Neural Networks-fig1.png
 sitemap:
   priority: 0.3
 ---
@@ -11,7 +12,7 @@ sitemap:
 ## どんなものか
 
 vanilla gradient系の説明手法（backprop, smooth grad, var grad）に対して特徴量重要度評価法を提案した。具体的には重要だとハイライトされた部分を隠しモデルを通す評価方法を見直し、削除と再学習を行い評価するROAMという手法を提案した。
-
+<!--more-->
 ## 先行研究と比べて
 
 saliency mapsの評価方法として、重要だと示されたハイライト部分を隠しモデルの予測を計算し予測確率の低下を見るものがある。この方法は画像を隠した際にその隠した画像というのが異なる分布となる（モデルの想定されていないデータとなる）ことが上げられる。

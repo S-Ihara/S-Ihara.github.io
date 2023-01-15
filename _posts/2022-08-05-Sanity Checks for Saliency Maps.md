@@ -4,6 +4,7 @@ title:  "Sanity Checks for Saliency Maps"
 subtitle: "reading papers"
 date:   2022-07-28
 categories: ["papers"]
+feature_image: /assets/img/blog/Sanity Checks for Saliency Maps-fig1.png
 sitemap:
   priority: 0.7
 ---
@@ -11,6 +12,8 @@ sitemap:
 ## どんなものか
 
 説明手法としていくつかのsaliency maps手法が提案されてきた。本研究ではsaliency maps手法を評価するための実用的な方法論を提案する。
+
+<!--more-->
 
 ## 先行研究と比べて
 

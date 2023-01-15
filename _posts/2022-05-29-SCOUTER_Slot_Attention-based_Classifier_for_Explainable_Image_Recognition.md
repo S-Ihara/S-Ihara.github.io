@@ -4,19 +4,20 @@ title:  "SCOUTER: Slot Attention-based Classifier for Explainable Image Recognit
 subtitle: "reading papers"
 date:   2022-05-29
 categories: ["papers"]
+feature_image: /assets/img/blog/SCOUTER Slot Attention-based Classifier for Explainable Image Recognition-fig1.png
 sitemap:
   priority: 0.3
 ---
 
 ## どんなものか
 
-![論文Figure 1: 肯定的な説明と否定的な説明の例](/assets/img/blog/SCOUTER Slot Attention-based Classifier for Explainable Image Recognition-fig1.png)
-
-論文Figure 1: 肯定的な説明と否定的な説明の例
-
 透明かつ正確な分類を行えるSCOUTER(Slot-based COnfigUrable and Transparent classifiER)と呼ばれるスロット注意機構に基づく分類器を提案した。
 
 またSCOUTERに合わせた新しい損失を設計し、正負の説明や説明領域の大きさも制御できるようにした。
+<!--more-->
+![論文Figure 1: 肯定的な説明と否定的な説明の例](/assets/img/blog/SCOUTER Slot Attention-based Classifier for Explainable Image Recognition-fig1.png)
+
+論文Figure 1: 肯定的な説明と否定的な説明の例
 
 ## 先行研究と比べて
 

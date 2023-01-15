@@ -4,13 +4,14 @@ title: "What I Cannot Predict, I Do Not Understand: A Human-Centered Evaluation 
 subtitle: "reading papers"
 date: 2022-12-22
 categories: ["papers"]
+feature_image: /assets/img/image_1671699399436_0.png
 sitemap:
   priority: 0.5
 ---
     
 - ## どんなものか  
 - 説明可能性手法の評価において人間のエンドユーザーを考慮した大規模なpsychophysicsの実験手法を提案し, それらを用いていくつかの説明可能性手法を比較した  
--  
+<!--more-->
 - ## 先行研究と比べて  
 - 説明可能性の評価として徐々にピクセルを削除していき予測精度がどれくらい低下するかで行う評価などがあった  
 	- 人間を考慮していない  

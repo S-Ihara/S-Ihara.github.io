@@ -4,12 +4,14 @@ title:  "Quantifying Attention Flow in Transformers"
 subtitle: "reading papers"
 date:   2022-10-13
 categories: ["papers"]
+feature_image: /assets/img/image_1671961901277_0.png
 sitemap:
   priority: 0.7
 ---
 
 - ## どんなものか  
 - Attention RolloutのSelf-Attentionによる情報の流れを定量化する問題を考え, 入力トークンへの注意そ近似する方法としてAttention RolloutとAttention Flowという2つの手法を提案した
+<!--more-->
 - ## 先行研究と比べて  
 - TransformerはSelf-AttentionによりAttentionされた埋め込みからの情報を次の層の焦点となる埋め込みの表現に結合させる. よってTransformerの層間では異なるトークンに由来する情報が次第に混在するようになり注意の重みは説明のプローブとして信頼できない.  
 - ## 技術や手法のポイント  
