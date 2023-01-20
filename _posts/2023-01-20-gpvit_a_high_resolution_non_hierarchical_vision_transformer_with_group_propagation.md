@@ -4,7 +4,7 @@ title:  "gpvit: a high resolution non-hierarchical vision transformer with group
 subtitle: "reading papers"
 date: 2023-1-16
 categories: ["papers"]
-feature_image: 
+feature_image: /assets/img/image_1673835153368_0.png
 sitemap:
   priority: 0.7
 ---
@@ -13,6 +13,7 @@ sitemap:
 - 画像認識のための非ピラミッド型のTransformer用モデルを提案した  
 - Group Propagationと呼ばれる学習可能な一定数のグループトークンにより特徴量をグループ化しグループ化された特徴量間で大域的な情報を交換するグループ伝搬を行う  
 - 本手法は画像認識の様々なタスク（画像分類, セマンティックセグメンテーション, 物体検出, インスタンスセグメンテーション）において性能向上し, 特に高解像度出力を必要とするタスクにおいて大きな性能向上を達成した  
+<!--more-->
 - ![image.png](/assets/img/image_1673835153368_0.png)  
 -  
 - ## 先行研究と比べて  
