@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: papers
 title:  "XRAI: Better Attributions Through Regions"
 subtitle: "reading papers"
 date:   2022-06-26

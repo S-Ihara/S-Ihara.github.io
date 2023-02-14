@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: papers
 title:  "Towards Automatic Concept-based Explanations"
 subtitle: "reading papers"
 date:   2022-06-19

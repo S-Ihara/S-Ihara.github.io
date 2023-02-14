@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: papers
 title:  "Bridging the Gap: Providing Post-Hoc Symbolic Explanations for Sequential Decision-Making Problems with Inscrutable Representations"
 subtitle: "reading papers"
 date:   2022-07-18

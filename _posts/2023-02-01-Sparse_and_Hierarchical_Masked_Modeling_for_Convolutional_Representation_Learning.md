@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: papers
 title:  "Sparse and Hierarchical Masked Modeling for Convolutional Representation Learning"
 subtitle: "reading papers"
 date: 2023-1-20

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: papers
 title: "Interpretability Beyond Feature Attribution: Quantitative Testing with Concept Activation Vectors (TCAV)"
 subtitle: "reading papers"
 date: 2022-09-21

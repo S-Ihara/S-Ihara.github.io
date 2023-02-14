@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: papers
 title:  "A Benchmark for Interpretability Methods in Deep Neural Networks"
 subtitle: "reading papers"
 date:   2022-05-29

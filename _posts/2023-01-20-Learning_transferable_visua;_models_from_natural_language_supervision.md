@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: papers
 title:  "learning transferable visual models from natural language supervision"
 subtitle: "reading papers"
 date: 2023-1-18

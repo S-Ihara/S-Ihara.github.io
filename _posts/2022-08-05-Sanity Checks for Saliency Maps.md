@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: papers
 title:  "Sanity Checks for Saliency Maps"
 subtitle: "reading papers"
 date:   2022-07-28

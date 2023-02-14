@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: papers
 title:  "Where Should I Spend My FLOPS? Efficiency Evaluations of Visual Pre-training Methods"
 subtitle: "reading papers"
 date:   2022-12-22

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: papers
 title:  "This Looks Like That: Deep Learning for Interpretable Image Recognition"
 subtitle: "reading papers"
 date:   2022-07-28

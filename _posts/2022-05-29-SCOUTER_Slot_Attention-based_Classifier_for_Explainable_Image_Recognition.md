@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: papers
 title:  "SCOUTER: Slot Attention-based Classifier for Explainable Image Recognition"
 subtitle: "reading papers"
 date:   2022-05-29

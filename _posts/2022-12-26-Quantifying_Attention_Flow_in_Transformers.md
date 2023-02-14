@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: papers
 title:  "Quantifying Attention Flow in Transformers"
 subtitle: "reading papers"
 date:   2022-10-13

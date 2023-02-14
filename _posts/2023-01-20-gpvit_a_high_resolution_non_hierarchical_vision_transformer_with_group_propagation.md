@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: papers
 title:  "gpvit: a high resolution non-hierarchical vision transformer with group propagation"
 subtitle: "reading papers"
 date: 2023-1-16

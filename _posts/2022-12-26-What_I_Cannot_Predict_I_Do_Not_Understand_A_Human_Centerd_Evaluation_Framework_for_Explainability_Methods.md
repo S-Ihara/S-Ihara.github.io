@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: papers
 title: "What I Cannot Predict, I Do Not Understand: A Human-Centered Evaluation Framework for Explainability Methods"
 subtitle: "reading papers"
 date: 2022-12-22

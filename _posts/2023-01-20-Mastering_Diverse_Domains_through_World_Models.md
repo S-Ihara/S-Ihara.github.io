@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: papers
 title:  "Mastering Diverse Domains through World Models"
 subtitle: "reading papers"
 date: 2023-1-17

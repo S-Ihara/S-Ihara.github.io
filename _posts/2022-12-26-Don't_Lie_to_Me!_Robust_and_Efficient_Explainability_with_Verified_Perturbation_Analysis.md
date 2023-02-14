@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: papers
 title: "Don't Lie to Me! Robust and Efficient Explainability with Verified Perturbation Analysis"
 subtitle: "reading papers"
 date:   2022-12-05

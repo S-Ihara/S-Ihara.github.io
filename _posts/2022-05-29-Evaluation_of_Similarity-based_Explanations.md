@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: papers
 title:  "Evaluation of Similarity-based Explanations"
 subtitle: "reading papers"
 date:   2022-05-29

@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: papers
 title:  "GPT can make tetris"
 subtitle: "playing with AI"
 date: 2022-12-01
