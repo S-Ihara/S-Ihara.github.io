@@ -23,7 +23,7 @@ function setup(){
     canvas = createCanvas(windowWidth, windowHeight); // 画面サイズ変えてもついてこない
     background(255);
     canvas.position(0,0); // canvasのポジションを原点に
-    canvas.style('z-index','-1'); // canvasのdom要素をz軸方向に後ろに1つずらす
+    canvas.style('z-index','-5'); // canvasのdom要素をz軸方向に後ろに設定する
     canvas.style('position','fixed'); // canvasをスクロールさせても動かさないように
 
     flock = new Flock();
@@ -113,7 +113,7 @@ Boid.prototype.render = function(){
     let theta = this.velocity.heading() + radians(90);
     //fill(127,alpha=150);
     //16a085
-    fill('rgba( 22,160,133,0.5 )');
+    fill('rgba( 22,160,133,0.3 )');
     stroke(200,alpha=127);
     push();
     translate(this.position.x, this.position.y);
