@@ -7,8 +7,11 @@ function setup(){
     canvas = createCanvas(windowWidth, windowHeight); // 画面サイズ変えてもついてこない
     background(255);
     canvas.position(0,0); // canvasのポジションを原点に
-    canvas.style('z-index','-1'); // canvasのdom要素をz軸方向に後ろに1つずらす
-    canvas.style('position','fixed'); // canvasをスクロールさせても動かさないように
+    canvas.style('z-index','-3'); // canvasのdom要素をz軸方向に後ろに1つずらす
+    //canvas.style('position','fixed'); // canvasをスクロールさせても動かさないように
+    canvas.style('position','absolute');
+    canvas.style('width','100%');
+    canvas.style('height','100%');
 
 
     // mover class 
