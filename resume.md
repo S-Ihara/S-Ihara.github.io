@@ -14,9 +14,19 @@ sitemap:
 <img src="{{'/assets/img/migawari.jpg'}}" class="about-myimage" style="float: right;width: 40%;margin-top: -10px;">
 岐阜大学大学院の修士1年  
 現在、[加藤研究室](http://www.cv.info.gifu-u.ac.jp)でコンピュータビジョンや機械学習の研究をしている
-#### interest
+
+### interest
 **Machine Learning** - XAIやReinforcement learningなど  
 **Computer Vision** - Vision Transformerなど
+
+### skills
+**Programming** - Pythonを研究や競プロなどメインで活用している  
+その他講義や勉強などで触ったことがあるものは、C、C++、Rust、Java、Javascriptなどなど  
+**Deep Learning** - PytorchやTensorflowあとたまにJaxなどを用いて深層学習用のプログラミングコードを書いている  
+**Competitive Programming** - 主にAtcoderで競プロをしている　Highest: 873  
+**Linux** - 研究室での研究用計算機は学生によって運用されておりその関係上Linux(Ubuntu)を触る機会が多い  
+OSセットアップからDockerによる深層学習環境構築、Ansibleによる一括管理など基本操作＋α程度触れる  
+**Web** - このサイトみたいな簡単なhtml,css,javascriptを書くことができる
 
 
 ## Affiliation
@@ -36,6 +46,7 @@ sitemap:
 ## Accounts
 [twitter](https://twitter.com/s_ihara77) - あんまりつかってないけど  
 [github](https://github.com/S-Ihara) - 個人的なツールとか
+[Atcoder](https://atcoder.jp/users/rariru) - 競技プログラミング
 
 
 ## Archive
