@@ -3,6 +3,7 @@ let flock;
 // ハイパラ
 let max_speed = 5; // default 5
 let max_force = 0.05; // default 0.05
+let num_boids = 100;
 // separation params
 let separation_force = 1+2*Math.random(); // default 3.5
 let separation_distance = 25.0 + Math.random()*10-5; // default 25.0
@@ -13,22 +14,28 @@ let aligment_distance = 50.0 + Math.random()*10-5; // default 50.0
 let cohesion_force = 2*Math.random(); // default 1.5
 let cohesion_distance = 50.0 + Math.random()*10-5; //default 50.0
 
-// preyer 
+// preyer
+// そのうち実装するかも？
 
 // reference
 // https://codepen.io/cossovich/pen/QWjMxye?editors=0010
+
+// マウスドラッグしたときにハイライトされないように
+document.body.addEventListener('mousedown', function(event) {
+    event.preventDefault(); // デフォルトのイベントをキャンセルする
+  });
 
 function setup(){
     // canvas init
     canvas = createCanvas(windowWidth, windowHeight); // 画面サイズ変えてもついてこない
     background(255);
     canvas.position(0,0); // canvasのポジションを原点に
-    canvas.style('z-index','-5'); // canvasのdom要素をz軸方向に後ろに設定する
+    canvas.style('z-index','-3'); // canvasのdom要素をz軸方向に後ろに設定する
     canvas.style('position','fixed'); // canvasをスクロールさせても動かさないように
 
     flock = new Flock();
     // Add an initial set of boids into the system
-       for (let i = 0; i < 100; i++) {
+       for (let i = 0; i < num_boids; i++) {
      let b = new Boid(width / 2,height / 2);
     flock.addBoid(b);
     }
@@ -37,10 +44,16 @@ function setup(){
 function draw(){
     background(255);
     flock.run();
+    if(mouseIsPressed===true){
+        fill('rgba( 160,60,22,0.5 )');
+        circle(mouseX,mouseY,10);
+        flock.repel(mouseX,mouseY);
+    }
 }
 
-function mouseDragged(){
+function mousePressed(){
     // flock.addBoid(new Boid(mouseX, mouseY)); クリックしたら増やせる
+    // flock.repel(mouseX,mouseY);
 }
 
 function Flock(){
@@ -56,6 +69,12 @@ Flock.prototype.run = function(){
 Flock.prototype.addBoid = function(b){
     this.boids.push(b);
 };
+
+Flock.prototype.repel = function(x,y){
+    for(let i=0;i<this.boids.length;i++){
+        this.boids[i].repel(x,y);
+    }
+}
 
 function Boid(x,y){
     this.acceleration = createVector(0,0);
@@ -108,6 +127,17 @@ Boid.prototype.seek = function(target){
     steer.limit(this.maxforce);
     return steer;
 };
+
+Boid.prototype.repel = function(x,y){
+    const dx = x - this.position.x;
+    const dy = y - this.position.y;
+    const dd = Math.max(10, dx * dx + dy * dy);
+    const d = Math.sqrt(dd);
+    if(d < 100);
+        const accel = - 500 / dd;
+        const f = createVector(accel * dx / d, accel * dy / d)
+        this.applyForce(f);
+}
 
 Boid.prototype.render = function(){
     let theta = this.velocity.heading() + radians(90);
@@ -205,6 +235,7 @@ Boid.prototype.cohesion = function(boids){
     }
 };
 
+/* 
 // preyerを作ってboidsをコントロールしたいが、実装どうしようか
 function Prey(){
     this.preyers = [];
@@ -219,3 +250,4 @@ Prey.prototype.run = function(){
         this.preyers[i].run(this.boids);
     }
 };
+*/

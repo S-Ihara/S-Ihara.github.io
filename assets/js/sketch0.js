@@ -8,8 +8,7 @@ function setup(){
     background(255);
     canvas.position(0,0); // canvasのポジションを原点に
     canvas.style('z-index','-3'); // canvasのdom要素をz軸方向に後ろに1つずらす
-    //canvas.style('position','fixed'); // canvasをスクロールさせても動かさないように
-    canvas.style('position','absolute');
+    canvas.style('position','absolute'); // canvasをスクロールさせても動かさないように
     canvas.style('width','100%');
     canvas.style('height','100%');
 
@@ -55,6 +54,17 @@ function setup(){
             else if (this.location.x < 0){this.location.x = w;}
             if(this.location.y > h){this.location.y = 0;}
             else if(this.location.y < 0){this.location.y = h;}       
+        }
+
+        repel(x,y){
+            //(x,y)座標から反発(引き付け)する
+            const dx = x - this.location.x;
+            const dy = y - this.location.y;
+            const dd = Math.max(0.1, dx * dx + dy * dy);
+            const d = Math.sqrt(dd);
+            const accel = 100 / dd;
+            this.acceleration.x -= accel * dx / d;
+            this.acceleration.y -= accel * dy / d;
         }
     }
     // movers init
