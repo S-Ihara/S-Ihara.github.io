@@ -1,3 +1,5 @@
+// boid model
+
 let flock;
 
 // ハイパラ
