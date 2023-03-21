@@ -37,8 +37,8 @@ function setup(){
 
     flock = new Flock();
     // Add an initial set of boids into the system
-       for (let i = 0; i < num_boids; i++) {
-     let b = new Boid(width / 2,height / 2);
+    for (let i = 0; i < num_boids; i++) {
+        let b = new Boid(width / 2,height / 2);
     flock.addBoid(b);
     }
 }
@@ -135,10 +135,11 @@ Boid.prototype.repel = function(x,y){
     const dy = y - this.position.y;
     const dd = Math.max(10, dx * dx + dy * dy);
     const d = Math.sqrt(dd);
-    if(d < 100);
+    if(d < 100){
         const accel = - 500 / dd;
-        const f = createVector(accel * dx / d, accel * dy / d)
+        const f = createVector(accel * dx / d, accel * dy / d);
         this.applyForce(f);
+    }
 }
 
 Boid.prototype.render = function(){
