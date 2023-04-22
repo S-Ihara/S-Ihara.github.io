@@ -5,7 +5,7 @@ subtitle: My name is Shunto Ihara
 sitemap:
   priority: 0.9
 ---
-<script src="{{ "/assets/js/sketch1.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/assets/js/sketch2.js" | prepend: site.baseurl }}"></script>
 <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script> 
 <img src="{{ '/assets/img/pudhina.png' | prepend: site.baseurl }}" id="about-img">
 
@@ -13,6 +13,7 @@ sitemap:
 	<p>ここはShunto Iharaのホームページです</p>
 </div>
 
+<!-- 
 <div id="contents-introduction">
 <h1> About </h1>
 井原　駿斗(Shunto Ihara)<br>
@@ -24,6 +25,6 @@ sitemap:
 <h1> Blog </h1>  
 読んだ論文などをまとめたりしてます <br>
 <a href="{{ '/blog' | prepend: site.baseurl }}" class="main-readmore">Read More</a>
-<!-- Works -->  
-<!-- Gallary -->
+
 </div>
+-->

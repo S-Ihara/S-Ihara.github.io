@@ -13,17 +13,31 @@ const PALETTE = [
 
 const minR = 8;
 const maxR = 50;
+
+/*
 const ALPHAS = [
-    [0.5 ,-0.2 ,0   ],
-    [0   ,0.2 ,0.2 ],
-    [0.2 ,0   ,0.2 ],
-]
+    [0.7 ,0.2 ,0.  ],
+    [-0.3,0.5 ,0.6 ],
+    [0.6 ,-0.4,-0.2],
+];
+*/
+
+const ALPHAS = [];
+for(let i=0;i<3;i++){
+    let tmp = [];
+    for(let j=0;j<3;j++){
+        let r = Math.random()*1.5 - 0.6;
+        tmp.push(r);
+    }
+    ALPHAS.push(tmp);
+}
+
 const R_smooth = 5;
 
 const particle_size = 5;
 const num_colors = 3;
-const num_particles = 500;
-const dt = 0.2;
+const num_particles = 1000;
+const dt = 0.1;
 
 // マウスドラッグしたときにハイライトされないように
 document.body.addEventListener('mousedown', function(event) {
