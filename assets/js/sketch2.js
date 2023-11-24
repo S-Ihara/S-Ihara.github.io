@@ -3,12 +3,13 @@
 let particles = [];
 
 // hyper parameters
+const ALPHA = 50;
 const PALETTE = [
-    [255 ,127 ,0   ,100 ],
-    [190 ,255 ,0   ,100 ],
-    [0   ,255 ,170 ,100 ],
-    [0   ,150 ,255 ,100 ],
-    [255 ,0   ,255 ,100 ],
+    [255 ,127 ,0   ,ALPHA ],
+    [190 ,255 ,0   ,ALPHA ],
+    [0   ,255 ,170 ,ALPHA ],
+    [0   ,150 ,255 ,ALPHA ],
+    [255 ,0   ,255 ,ALPHA ],
 ];
 
 const minR = 8;
@@ -133,12 +134,12 @@ class Particle {
     }
   
     display() {
-      // パーティクルを描画する
-      //fill(this.color);
-      noStroke();
-      //fill("#FF8600");
-      fill(PALETTE[this.color]);
-      circle(this.position.x,this.position.y,particle_size);
+        // パーティクルを描画する
+        //fill(this.color);
+        noStroke();
+        //fill("#FF8600");
+        fill(PALETTE[this.color]); // Increase opacity to 200
+        circle(this.position.x,this.position.y,particle_size);
     }
 
     interact(p){
