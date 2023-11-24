@@ -23,7 +23,7 @@ sitemap:
 **Programming** - Pythonを研究や競プロなどメインで活用している  
 その他講義や勉強などで触ったことがあるものは、C、C++、Rust、Java、Javascriptなどなど  
 **Deep Learning** - PytorchやTensorflowあとたまにJaxなどを用いて深層学習用のプログラミングコードを書いている  
-**Competitive Programming** - 主にAtcoderで競プロをしている　Highest: 873  
+**Competitive Programming** - 主にAtcoderで競プロをしている　A:873 H:1160 (Highest)
 **Linux** - 研究室での研究用計算機は学生によって運用されておりその関係上Linux(Ubuntu)を触る機会が多い  
 OSセットアップからDockerによる深層学習環境構築、Ansibleによる計算機サーバーたちの一括管理など基本操作＋α程度触れる  
 **Web** - このサイトみたいな簡単なhtml、css、javascriptを書くことができる
@@ -44,7 +44,7 @@ OSセットアップからDockerによる深層学習環境構築、Ansibleに�
 <!-- * xai手法のnnabla実装及びcolabで動かせるようなexampleの作成 -->
 
 ## Accounts
-[twitter](https://twitter.com/s_ihara77) - あんまりつかってないけど  
+[旧twitter](https://twitter.com/s_ihara77) - あんまりつかってないけど  
 [github](https://github.com/S-Ihara) - 個人的なツールとか  
 [Atcoder](https://atcoder.jp/users/rariru) - 競技プログラミング
 
