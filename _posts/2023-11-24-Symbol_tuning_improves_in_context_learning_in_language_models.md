@@ -4,7 +4,7 @@ title:  "Symbol tuning improves in-context learning in language models"
 subtitle: "reading papers"
 date: 2023-11-15
 categories: ["papers"]
-feature_image: /assets/img/image_1690798953737_0.png
+feature_image: /assets/img/image_1700029758670_0.png
 sitemap:
   priority: 0.7
 publish: True
