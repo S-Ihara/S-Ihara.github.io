@@ -12,8 +12,7 @@ sitemap:
 ## About
 **井原　駿斗 (Shunto Ihara)**  
 <img src="{{'/assets/img/migawari.jpg'}}" class="about-myimage" style="float: right;width: 40%;margin-top: -10px;">
-岐阜大学大学院の修士2年  
-現在、[加藤研究室](http://www.cv.info.gifu-u.ac.jp)でコンピュータビジョンや深層学習の研究をしている
+某JTCで社会人やってるよ。
 
 ### interest
 **Machine Learning** - XAIやReinforcement learningなど  
@@ -31,17 +30,20 @@ OSセットアップからDockerによる深層学習環境構築、Ansibleに�
 
 ## Affiliation
 
-2022.4 ~ 現在 : 岐阜大学大学院 自然科学技術研究科 知能理工学専攻 修士課程  
+2024.4 ~ : 某JTC
+2022.4 ~ 2024.3 : 岐阜大学大学院 自然科学技術研究科 知能理工学専攻 修士課程  
 2018.4 ~ 2022.3 : 岐阜大学 工学部 電気電子・情報工学科 学士過程  
 
 ## Activitys
 
+<!--
 ### publications
 * 井原 駿斗, 志賀 元紀, “強化学習モデルの行動決定のための注目領域の可視化法”, 電子情報通信学会 東海支部 令和3(2021)年度 卒業研究発表会, Mar. 2022.
 
 ### Internship
 2022.8 ~ 2022.9 : Sony Group Corporation R&D Center (4 weeks)
 <!-- * xai手法のnnabla実装及びcolabで動かせるようなexampleの作成 -->
+
 
 ## Accounts
 [旧twitter](https://twitter.com/s_ihara77) - あんまりつかってないけど  
