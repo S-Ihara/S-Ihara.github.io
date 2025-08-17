@@ -16,7 +16,7 @@ sitemap:
 
 ### interest
 **Machine Learning** - XAIやReinforcement learningなど  
-**Computer Vision** - Vision Transformerなど
+**Computer Vision** - Vision Transformerなど  
 
 ### skills
 **Programming** - Pythonを研究や競プロなどメインで活用している  
@@ -25,7 +25,7 @@ sitemap:
 **Competitive Programming** - 主にAtcoderで競プロをしている　A:873 H:1160 (Highest)
 **Linux** - 研究室での研究用計算機は学生によって運用されておりその関係上Linux(Ubuntu)を触る機会が多い  
 OSセットアップからDockerによる深層学習環境構築、Ansibleによる計算機サーバーたちの一括管理など基本操作＋α程度触れる  
-**Web** - このサイトみたいな簡単なhtml、css、javascriptを書くことができる
+**Web** - このサイトみたいな簡単なhtml、css、javascriptを書くことができる  
 
 
 ## Affiliation
