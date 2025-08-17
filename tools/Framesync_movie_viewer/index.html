@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>frame sync movie viewer</title>
+<style>
+  body { font-family: sans-serif; }
+  .video-container { display: flex; gap: 10px; flex-wrap: wrap; }
+  video { background: black; }
+</style>
+</head>
+<body>
+
+<h1>frame sync movie viewer</h1>
+
+<input type="file" id="fileInput" multiple accept="video/*"><br><br>
+
+<label>
+  FPS: 
+  <input type="number" id="fpsInput" value="30" min="1" style="width:60px">
+</label>
+<br><br>
+
+<label>
+  動画サイズ: 
+  <input type="range" id="sizeSlider" min="100" max="1600" value="300">
+  <span id="sizeLabel">300</span> px
+</label>
+
+<div class="video-container" id="videoContainer"></div>
+
+<br>
+<input type="range" id="frameSlider" min="0" max="100" step="1" value="0" style="width:500px">
+<span id="frameLabel">0</span> フレーム
+
+<br><br>
+<button id="prevFrame">◀ 前のフレーム</button>
+<button id="nextFrame">次のフレーム ▶</button>
+<button id="playAll">▶ 一斉再生</button>
+<button id="stopAll">⏸ 一斉停止</button>
+
+<script>
+const fileInput = document.getElementById('fileInput');
+const videoContainer = document.getElementById('videoContainer');
+const frameSlider = document.getElementById('frameSlider');
+const frameLabel = document.getElementById('frameLabel');
+const prevFrameBtn = document.getElementById('prevFrame');
+const nextFrameBtn = document.getElementById('nextFrame');
+const sizeSlider = document.getElementById('sizeSlider');
+const sizeLabel = document.getElementById('sizeLabel');
+const fpsInput = document.getElementById('fpsInput');
+const playAllBtn = document.getElementById('playAll');
+const stopAllBtn = document.getElementById('stopAll');
+
+let videos = [];
+let fps = parseInt(fpsInput.value);
+let totalFrames = 0;
+let isPlaying = false;
+let rafId = null;
+
+fileInput.addEventListener('change', async () => {
+  videoContainer.innerHTML = '';
+  videos = [];
+  const files = Array.from(fileInput.files);
+
+  const loadPromises = files.map(file => {
+    return new Promise(resolve => {
+      const video = document.createElement('video');
+      video.src = URL.createObjectURL(file);
+      video.controls = true;
+      video.width = sizeSlider.value;
+      video.addEventListener('loadedmetadata', () => resolve(video));
+      videos.push(video);
+      videoContainer.appendChild(video);
+    });
+  });
+
+  // すべての動画のloadedmetadataを待つ
+  await Promise.all(loadPromises);
+  updateSliderMax();
+});
+
+function updateSliderMax() {
+  fps = parseInt(fpsInput.value);
+  const maxDuration = Math.max(...videos.map(v => v.duration));
+  totalFrames = Math.floor(maxDuration * fps);
+  frameSlider.max = totalFrames;
+  console.log("更新されたmaxフレーム数:", totalFrames);
+}
+
+// スライダーで全動画同期
+frameSlider.addEventListener('input', () => {
+  const frame = parseInt(frameSlider.value);
+  frameLabel.textContent = frame;
+  fps = parseInt(fpsInput.value);
+  videos.forEach(v => {
+    v.currentTime = frame / fps;
+  });
+});
+
+// FPS変更時
+fpsInput.addEventListener('change', () => {
+  updateSliderMax();
+});
+
+// スライダーで全動画同期
+frameSlider.addEventListener('input', () => {
+  const frame = parseInt(frameSlider.value);
+  frameLabel.textContent = frame;
+  fps = parseInt(fpsInput.value);
+  videos.forEach(v => {
+    v.currentTime = frame / fps;
+  });
+});
+
+// サイズ変更スライダー
+sizeSlider.addEventListener('input', () => {
+  sizeLabel.textContent = sizeSlider.value;
+  videos.forEach(v => {
+    v.width = sizeSlider.value;
+  });
+});
+
+// 前後フレームボタン
+prevFrameBtn.addEventListener('click', () => {
+  frameSlider.value = Math.max(0, frameSlider.value - 1);
+  frameSlider.dispatchEvent(new Event('input'));
+});
+nextFrameBtn.addEventListener('click', () => {
+  frameSlider.value = Math.min(totalFrames, Number(frameSlider.value) + 1);
+  frameSlider.dispatchEvent(new Event('input'));
+});
+
+// 一斉再生
+playAllBtn.addEventListener('click', () => {
+  if (videos.length === 0) return;
+  isPlaying = true;
+  videos.forEach(v => v.play());
+  syncSliderWithVideos();
+});
+
+// 一斉停止
+stopAllBtn.addEventListener('click', () => {
+  isPlaying = false;
+  videos.forEach(v => v.pause());
+  if (rafId) cancelAnimationFrame(rafId);
+});
+
+// 再生中のスライダー同期
+function syncSliderWithVideos() {
+  if (!isPlaying) return;
+  if (videos[0]) {
+    const currentFrame = Math.floor(videos[0].currentTime * fps);
+    frameSlider.value = currentFrame;
+    frameLabel.textContent = currentFrame;
+  }
+  rafId = requestAnimationFrame(syncSliderWithVideos);
+}
+</script>
+
+</body>
+</html>
