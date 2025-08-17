@@ -30,7 +30,7 @@ OSセットアップからDockerによる深層学習環境構築、Ansibleに�
 
 ## Affiliation
 
-2024.4 ~ : 某JTC
+2024.4 ~ : 某JTC  
 2022.4 ~ 2024.3 : 岐阜大学大学院 自然科学技術研究科 知能理工学専攻 修士課程  
 2018.4 ~ 2022.3 : 岐阜大学 工学部 電気電子・情報工学科 学士過程  
 
@@ -48,9 +48,9 @@ OSセットアップからDockerによる深層学習環境構築、Ansibleに�
 ## Accounts
 [旧twitter](https://twitter.com/s_ihara77) - あんまりつかってないけど  
 [github](https://github.com/S-Ihara) - 個人的なツールとか  
-[Atcoder](https://atcoder.jp/users/rariru) - 競技プログラミング
+[Atcoder](https://atcoder.jp/users/rariru) - 競技プログラミング  
 
 
 ## Archive
-[Blog](https://s-ihara.github.io/blog) - 読んだ論文のざっくりしたまとめとか
+[Blog](https://s-ihara.github.io/blog) - 読んだ論文のざっくりしたまとめとか  
 
